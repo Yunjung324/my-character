@@ -1,0 +1,155 @@
+body{
+    background-color:  rgb(255, 233, 108);
+}
+.msbody{
+    width : 300px;
+    height : 300px;
+    background-color: rgb(199, 197, 197);
+    border-radius : 85% 15% 71% 29% / 69% 16% 84% 31% ;
+    border : 3px solid black;
+    position : absolute;
+    left : 50%;
+    top : 50%;
+    transform : translate(-50%, -50%);
+    z-index : 10;
+    box-shadow:  0px 18px 5px -2px gray;
+}
+.leftear, .rightear{
+    width : 120px;
+    height : 120px;
+    border-radius : 50% 50% 50% 50% / 50% 50% 50% 50% ;
+    background-color: rgb(199, 197, 197);
+    border : 3px solid black;
+    position : absolute;
+}
+.leftear{
+    left : calc(50% - 210px);
+    top : calc(50% - 40px);
+}
+.rightear{
+    left : calc(50% - 5px);
+    top : calc(50% + 40px);
+}
+.leftearblack, .rightearblack{
+    width : 90px;
+    height : 90px;
+    border-radius: 50% 50% 50% 50% / 50% 50% 50% 50% ;
+    background-color: black;
+    position : absolute;
+    padding : 5px;
+    margin : 10px;
+}
+.rightearblack{
+    z-index : 15;
+}
+.lefteye, .righteye{
+    width : 20px;
+    height : 20px;
+    border-radius: 50% 50% 50% 50% / 50% 50% 50% 50% ;
+    z-index : 20;
+    background-color: black;
+    position : absolute;
+}
+.lefteye{
+    left : calc(50% - 110px);
+    top : calc(50% + 50px);
+}
+.righteye{
+    left : calc(50% - 60px);
+    top : calc(50% + 50px);
+}
+.nose{
+    width : 10px;
+    height : 10px;
+    background-color: rgb(248, 135, 153);
+    z-index : 20;
+    position : absolute; 
+    border-radius: 50% 50% 50% 50% / 50% 50% 50% 50% ;
+    padding : 0 4px;
+    left : calc(50% - 90px);
+    top : calc(50% + 70px);
+    border : 3px solid black;
+}
+.mouth{
+    width : 90px;
+    height : 90px;
+    border-radius : 50% 50% 50% 50% / 50% 50% 50% 50% ;
+    background-color: rgb(12, 12, 12);
+    border : 3px solid black;
+    position : absolute;
+}
+.graymouth{
+    width : 70px;
+    height : 70px;
+    border-radius: 50% 50% 50% 50% / 50% 50% 50% 50% ;
+    background-color: rgb(199, 197, 197);
+    position : absolute;
+    padding : 5px;
+    margin : 5px;
+}
+.box{
+    width : 100px;
+    height : 70px;
+    background-color: rgb(199, 197, 197);
+    position : absolute;
+    z-index : 5;
+}
+.mouth, .box{
+    left : calc(50% - 120px);
+    top : calc(50% + 20px);
+}
+.leftcheek, .rightcheek{
+    width : 20px;
+    height : 20px;
+    border-radius: 50% 50% 50% 50% / 50% 50% 50% 50% ;
+    padding : 0 4px;
+    z-index : 20;
+    background-color: pink;
+    position : absolute;
+}
+.leftcheek{
+    left : calc(50% - 140px);
+    top : calc(50% + 70px);
+}
+.rightcheek{
+    left : calc(50% - 40px);
+    top : calc(50% + 70px);
+}
+.wheel{
+    width : 20px;
+    height : 20px;
+    border-radius: 50% 50% 50% 50% / 50% 50% 50% 50% ;
+    background-color : white;
+    padding : 5px 20px;
+    transform : rotate(130deg);
+    position : absolute;
+    left : calc(50% - 90px);
+    top : calc(50% + 5px);
+    z-index: 20;
+    box-shadow: 0px -7px 0 -2px gray;
+}
+.teeth{
+    width : 10px;
+    height : 6px;
+    background-color: #fff;
+    position : absolute;
+    left : calc(50%);
+    top : calc(50% + 45px);
+    border : 3px solid black;
+}
+.tail{
+    width : 100px;
+    height : 20px;
+    border-radius : 0 7px 7px 0;
+    background-color : black;
+    position : absolute;
+    left : calc(50% + 110px);
+    top : calc(50% - 170px);
+    transform: rotate(-45deg);
+    animation : move-tail 1s infinite;
+    animation-direction : alternate;
+}
+@keyframes move-tail{
+    0% {transform : rotate(-58deg);}
+    to {transform : rotate(-33deg);}
+}
